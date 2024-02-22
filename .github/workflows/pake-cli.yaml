@@ -97,7 +97,7 @@ jobs:
         run: |
           echo "install pake on local"
           npm install pake-cli
-          Copy-Item -Path "D:\a\Pake\Pake\adblock.js" -Destination "D:\a\Pake\Pake\node_modules\pake-cli\adblock.js"
+          cp "D:\a\Pake\Pake\adblock.js" "D:\a\Pake\Pake\node_modules\pake-cli\adblock.js"
 
       - name: Rust cache restore
         uses: actions/cache/restore@v3
